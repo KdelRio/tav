@@ -2,11 +2,11 @@ body{
     background-color:transparent;
 }
 
-.headerazul{
+.fazul{
     background-color: rgb(109, 109, 247);
 }
 
-.navverde{
+.fverde{
     background-color: rgb(177, 238, 117);
 }
 table {
@@ -24,3 +24,7 @@ table {
   tr:nth-child(even) {
     background-color: #a4e6a4;
   }
+
+login{
+
+}
