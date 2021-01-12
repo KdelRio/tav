@@ -1,11 +1,9 @@
 body{
-    background-color:transparent;
+    background-color:rgb(211, 211, 211);
 }
-
 .fazul{
     background-color: rgb(109, 109, 247);
 }
-
 .fverde{
     background-color: rgb(177, 238, 117);
 }
@@ -14,17 +12,35 @@ table {
     border-collapse: collapse;
     width: 100%;
   }
-  
-  td, th {
+td, th {
     border: 1px solid #dddddd;
     text-align: left;
     padding: 8px;
-  }
-  
-  tr:nth-child(even) {
+}
+tr:nth-child(even) {
     background-color: #a4e6a4;
-  }
+}
+.loginad{
+    margin-left: 300px;
+    margin-top: 50px;
+    background-color: rgb(177, 238, 117);
+    width: 300px;
+    height: 240px;    
+}
+.tcentrado{
+    margin-left: 15px;
+}
+.titulo{
+    margin-left: 20px;
+}
+.centrado{
+    margin-left: 60px;
+}
 
-login{
-
+#wrapper {
+    width: 500px;
+    display: flex;
+}
+#first {
+    width: 300px;
 }
