@@ -9,14 +9,16 @@
     <link rel="stylesheet" href="./css/form-login.css">
     <script src='main.js'></script>
 </head>
-<body>
+<body style="background-image: url(./img/fondo-login.jpg);background-size: 100%;" >
     <section class="formulario-login">
-        <h4>Login</h4>
-        <input class="controles" type="email" name="nombre" id="nombre" placeholder="Ingrese su Correo">
-        <input class="controles" type="password" name="nombre" id="nombre" placeholder="Ingrese su Contraseña">
-        <p>¿No tienes Cuenta?<a href=""> Registrarse</a></p>
-        <p>¿Olvidaste tu contraseña?<a href=""> Recuperar contraseña</a></p>
-        <input class="botones" type="submit" value="Ingresar">
+        <form class="cmxform" id="commentForm" method="get" action="./tablasempleados.html">
+                <h4>Login</h4>
+                <input class="controles" type="email" name="nombre" id="nombre" minlength="2" placeholder="Ingrese su Correo" required>
+                <input class="controles" type="password" name="nombre" id="nombre" minlength="6" placeholder="Ingrese su Contraseña" required>
+                <p>¿No tienes Cuenta?<a href=""> Registrarse</a></p>
+                <p>¿Olvidaste tu contraseña?<a href=""> Recuperar contraseña</a></p>
+                <input class="botones" type="submit" value="Ingresar">
+        </form>
     </section>
 </body>
 
