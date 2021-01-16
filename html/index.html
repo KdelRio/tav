@@ -3,51 +3,21 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Page Title</title>
+    <title>Login</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel='stylesheet' type='text/css' media='screen' href='./css/form-login.css'>
+    <link rel="stylesheet" href="./css/form-login.css">
     <script src='main.js'></script>
 </head>
-<body class="bodyindex">
-    <Header class="fazul">
-         <h1 class="remroll">RemRoll</h1>   
-    </Header>
-    <div id="wrapper">
-        <div id="first">
-            <section class="loginad">
-                <h1 class="titulo">Login Administrador</h1>
-                <article>
-                    <p class="centrado">Usuario</p>
-                    <input class="tcentrado" type="text" id="usuario">
-                </article>
-                <article>
-                    <p class="centrado">Contraseña</p>
-                    <input class="tcentrado" type="text" id="contraseña" >
-                </article><br>
-                <article>
-                    <button class="centrado"> <a href="./tablasempleados.html">Ingresar</a></button>
-                </article>
-            </section>
-        </div>
-        <div id="second">
-            <section class="loginad">
-                <h1 class="titulo">Login Empresa-Cliente</h1>
-                <article>
-                    <p class="centrado">Usuario</p>
-                    <input class="tcentrado" type="text" id="usuario">
-                </article>
-                <article>
-                    <p class="centrado">Contraseña</p>
-                    <input class="tcentrado" type="text" id="contraseña">
-                </article><br>
-                <article>
-                    <button class="centrado"><a href="./Empleadosec.html">Ingresar</a></button>
-                </article>
-            </section>
-        </div>
-    </div>
-    
-  
+<body>
+    <section class="formulario-login">
+        <h4>Login</h4>
+        <input class="controles" type="email" name="nombre" id="nombre" placeholder="Ingrese su Correo">
+        <input class="controles" type="password" name="nombre" id="nombre" placeholder="Ingrese su Contraseña">
+        <p>¿No tienes Cuenta?<a href=""> Registrarse</a></p>
+        <p>¿Olvidaste tu contraseña?<a href=""> Recuperar contraseña</a></p>
+        <input class="botones" type="submit" value="Ingresar">
+    </section>
 </body>
+
 </html>

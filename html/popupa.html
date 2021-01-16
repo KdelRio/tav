@@ -12,9 +12,37 @@
 <body>
     <div class="window-notice" id="window-notice">
         <div class="content">
-            <div class="content-text">El usuario Ha sido Agregado 
-            <div class="content-buttons"><a href="./agregar.html" id="close-button">Aceptar</a></div>
-        </div>
-    </div>
+            <form class="cmxform" id="commentForm" method="get" action="">
+                <fieldset>
+                    <legend>Ingrese su Nombre, Correo y Telefono</legend>
+                    <p>
+                        <label for="cnombre">Nombre (Obligatorio, Almenos dos caracteres)</label>
+                        <input id="cnombre" name="nombre" minlength="2" type="text" required>
+                    </p>
+                    <p>
+                        <label for="cemail">Correo (Obligatorio)</label>
+                        <input id="cemail" type="email" name="email" required>
+                    </p>
+                    <p>
+                        <label for="ctelefono">Telefono (Obligatorio)</label>
+                        <input id="ctelefono" type="number" name="telefono">
+                    </p>
+                    <p>
+                        <input class="submit" type="submit" value="Submit">
+                    </p>
+                </fieldset>
+            </form>
+            <script>
+                var require = {
+                    paths: {
+                        "jquery": "../../lib/jquery-3.1.1"
+                    }
+                };
+                </script>
+                <script src="../../lib/require.js" data-main="app.js"></script>
+            </div>
+            
+        </div>    
+        
 </body>
 </html>
