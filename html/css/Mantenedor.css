@@ -1,0 +1,89 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(209, 209, 209);
+    color: white;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 90%;
+    box-shadow: 0 0 3px 0 rgba(255, 255, 255, 0.315);
+    margin-left: 10px;
+}
+
+table a{
+    color: white;
+    text-decoration: none;
+}
+
+td{
+    border-bottom: 1px solid  rgba(255, 255, 255, 0.349);
+    text-align: left;
+    padding: 8px;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.082);
+}
+
+th{
+    border: none;
+    text-align: left;
+    padding: 8px;
+    background-color: rgba(255, 255, 255, 0.349);
+    color: white;
+}
+
+.nombre{
+    width: 120px;
+    text-align: left;
+    padding: 8px;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.082);
+}
+
+.filtro{
+    border: none;
+    border-bottom: 1px solid  rgba(255, 255, 255, 0.349);
+    width: 120px;
+    text-align: left;
+    padding: 8px;
+    color: white;
+    background-color: transparent;
+}
+.vertical-menu {
+    width: 100%;
+    height: 800px;
+    background: -webkit-linear-gradient(left, #64be99, rgba(255, 255, 255, 0));
+    border-radius: 12px;
+  }
+  
+  .vertical-menu a {
+    color: white; /* Black text color */
+    display: block; /* Make the links appear below each other */
+    padding: 12px; /* Add some padding */
+    text-decoration: none; /* Remove underline from links */
+  }
+  
+  .vertical-menu a:hover {
+    background: -webkit-linear-gradient(left, #16af6f, rgba(255, 255, 255, 0)); /* Dark grey background on mouse-over */
+  }
+  
+  .vertical-menu a.active {
+    background: -webkit-linear-gradient(left, #128f5b,  rgba(255, 255, 255, 0)); /* Add a green color to the "active/current" link */
+    color: white;
+    overflow: hidden;
+  }
+
+#wrapper {
+    width: 100%;
+    display: flex;
+}
+#first {
+    width: 15%;
+}
+#second {
+    width: 85%;
+}
