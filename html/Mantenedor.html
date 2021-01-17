@@ -10,100 +10,99 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src='./js/mantenedor.js'></script>
 </head>
-<body>
-    <header>
-        <h1>Tabla de Empleados</h1>
-        <div>
-            <p>Filtro 
-              <select name="select">
-                <option value="value1">Nombre</option>
-                <option value="value2">Numero</option>
-                <option value="value3">Direccion</option> 
-              </select> 
-              <input type="text" id="text1">
-              <button>Filtrar</button>
-            </p>
-        </div>
-    </header>
-    <table>
-        <tr>
-          <th> Compañia</th>
+<body style="background-image: url(./img/fondo-login.jpg);background-size: 100%;">
+ <div id="wrapper">
+   <div id="first">
+      <div class="vertical-menu">
+        <a href="#" class="active">Administrar Empleados</a>
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+        <a href="./Login.html">Cerrar Sesion</a>
+      </div>
+   </div>
+      <div id="second">
+        <div style="margin: 12px;">
+            <select name="select" class="filtro">
+              <option value="value1">Nombre</option>
+              <option value="value2">Numero</option>
+              <option value="value3">Direccion</option> 
+            </select> 
+            <input type="text" id="text1" class="filtro">
+            <button>Filtrar</button>
+      </div>
+      <table>
+      <tr>
+          <th>Nombre</th>
           <th>Telefono</th>
           <th>Direccion</th>
+          <th>Sueldo bruto</th>
+          <th>Prevision</th>
+          <th>Imposiciones</th>
+          <th>Bono transporte</th>
+          <th>Bonos adicionales</th>
           <th colspan="2">Accion</th>
         </tr>
         <tr>
-          <td><input type="checkbox" id="cbox1">Kevin del rio</td>
+          <td class="nombre">Kevin del rio</td>
           <td>988987646</td>
           <td>Chile,Santiago,Quilicura</td>
-          <td><button><a href="./popupe.html">Eliminar</a></button> </td>
-          <td><button><a href="./popupm.html">Modificar</a></button> </td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td><a href="./popupe.html">Eliminar</a></td>
+          <td><a href="./popupm.html">Modificar</a></td>
         </tr>
         <tr>
-          <td><input type="checkbox" id="cbox1">Diego Chacana</td>
+          <td>Diego Chacana</td>
           <td>949484814</td>
           <td>Chile,Santiago,Quilicura</td>
-          <td><button><a href="./popupe.html">Eliminar</a></button> </td>
-          <td><button><a href="./popupm.html">Modificar</a></button> </td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td><a href="./popupe.html">Eliminar</a></td>
+          <td><a href="./popupm.html">Modificar</a></td>
         </tr>
         <tr>
-          <td><input type="checkbox" id="cbox1">Ricardo Salas</td>
+          <td>Ricardo Salas</td>
           <td>985475462</td>
           <td>Chile,Santiago,Desconocido</td>
-          <td><button><a href="./popupe.html">Eliminar</a></button> </td>
-          <td><button><a href="./popupm.html">Modificar</a></button> </td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td><a href="./popupe.html">Eliminar</a></td>
+          <td><a href="./popupm.html">Modificar</a></td>
         </tr>
         <tr>
-          <td><input type="checkbox" id="cbox1">Patricio Ogaz</td>
+          <td>Patricio Ogaz</td>
           <td>985674521</td>
           <td>Chile,Santiago,Desconocido</td>
-          <td><button><a href="./popupe.html">Eliminar</a></button> </td>
-          <td><button><a href="./popupm.html">Modificar</a></button> </td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td><a href="./popupe.html">Eliminar</a></td>
+          <td><a href="./popupm.html">Modificar</a></td>
         </tr>
-      </table>
-      <h2>Parametros de Remuneracion</h2>
-      <table>
-          <tr>
-              <th>Nombre</th>
-              <th>Sueldo bruto</th>
-              <th>Prevision</th>
-              <th>Imposiciones</th>
-              <th>Bono transporte</th>
-              <th>Bonos Adicionales</th>
-          </tr>
-          <tr>
-              <td>Kevin Del Rio</td>
-              <td><input type="text" name="sueldobruto" id="suel"> </td>
-              <td><input type="text" name="prevision" id="prev"> </td>
-              <td><input type="text" name="imposiciones" id="impo"> </td>
-              <td><input type="text" name="bonotransporte" id="botrans"> </td>
-              <td><input type="text" name="bonosadc" id="boadc"> </td>
-          </tr>
-          <tr>
-            <td>Diego Chacana</td>
-            <td><input type="text" name="sueldobruto" id="suel"> </td>
-            <td><input type="text" name="prevision" id="prev"> </td>
-            <td><input type="text" name="imposiciones" id="impo"> </td>
-            <td><input type="text" name="bonotransporte" id="botrans"> </td>
-            <td><input type="text" name="bonosadc" id="boadc"> </td>
-          </tr>
-          <tr>
-            <td>Ricardo Salas</td>
-            <td><input type="text" name="sueldobruto" id="suel"> </td>
-            <td><input type="text" name="prevision" id="prev"> </td>
-            <td><input type="text" name="imposiciones" id="impo"> </td>
-            <td><input type="text" name="bonotransporte" id="botrans"> </td>
-            <td><input type="text" name="bonosadc" id="boadc"> </td>
-          </tr>
-          <tr>
-            <td>Patricio Ogaz</td>
-            <td><input type="text" name="sueldobruto" id="suel"> </td>
-            <td><input type="text" name="prevision" id="prev"> </td>
-            <td><input type="text" name="imposiciones" id="impo"> </td>
-            <td><input type="text" name="bonotransporte" id="botrans"> </td>
-            <td><input type="text" name="bonosadc" id="boadc"> </td>
-          </tr>
-      </table><br>
-      <button><a href="./index.html">Cerrar Sesion</a></button>
+    </table>
+  </div>  
+      <script>
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "250px";
+        }
+        
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+        }
+        </script>
+
+  
 </body>
 </html>
