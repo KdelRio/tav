@@ -5,7 +5,7 @@ $.validator.setDefaults( {
 	  }
     }
  );
- 
+
  $(document).ready(function(){
 	$('#addform').validate({
 	   rules: {
