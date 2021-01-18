@@ -20,6 +20,7 @@
         <a href="./Login.html">Cerrar Sesion</a>
       </div>
    </div>
+   <form id="addform" method="get" action="./Mantenedor.html">
       <div id="second">
         <div style="margin: 12px;">
             <select name="select" class="filtro">
@@ -90,16 +91,15 @@
           <td><a href="./popupe.html">Eliminar</a></td>
           <td><a href="./popupm.html">Modificar</a></td>
         </tr>
-    <form class="form-group" id="addform" method="get" action="./Mantenedor.html">
         <tr>
-            <td><input class="filtro2" name="nombre" id="nombre" required></td>
-            <td><input class="filtro2" name="telefono" id="telefono"></td>
+            <td><input class="filtro2" id="nombre" name="nombre"></td>
+            <td><input class="filtro2" type="number" name="telefono" id="telefono"></td>
             <td><input class="filtro2" name="direccion" id="direccion"></td>
-            <td><input class="filtro2" name="sueldobruto" id="sueldobruto"></td>
-            <td><input class="filtro2" name="prevision" id="prevision"></td>
-            <td><input class="filtro2" name="imposiciones" id="imposiciones"></td>
-            <td><input class="filtro2" name="bonotransporte" id="bonotransporte"></td>
-            <td><input class="filtro2" name="bonosadc" id="bonosadc"></td>
+            <td><input class="filtro2" type="number" name="sueldobruto" id="sueldobruto"></td>
+            <td><input class="filtro2" type="number" name="prevision" id="prevision"></td>
+            <td><input class="filtro2" type="number" name="imposiciones" id="imposiciones"></td>
+            <td><input class="filtro2" type="number" name="bonotransporte" id="bonotransporte"></td>
+            <td><input class="filtro2" type="number" name="bonosadc" id="bonosadc"></td>
             <td><input class="botonadd" id="ingresar" type="submit" value="Confirmar"></td>
             <td></td>
         </tr>

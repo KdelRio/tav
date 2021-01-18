@@ -15,19 +15,79 @@ $.validator.setDefaults( {
 		  },
 		  telefono: {
 			 required: true,
+			 number: true,
 			 minlength: 6
 		  },
+		  direccion: {
+			required: true,
+			minlength: 6
+		 },
+		 sueldobruto: {
+			required: true,
+			number: true,
+			minlength: 4
+		 },
+		 prevision: {
+			required: true,
+			number: true,
+			minlength: 4
+		 },
+		 imposiciones: {
+			required: true,
+			number: true,
+			minlength: 4
+		 },
+		 bonotransporte: {
+			required: true,
+			number: true,
+			minlength: 4
+		 },
+		 bonoadc: {
+			required: true,
+			number: true,
+			minlength: 4
+		 },
 		  agree: "required"
 	   },
 	   messages: {           
-		correo: {
-			 required: "Por favor ingresa un correo valido",
-			 email: "Debe contener @; ejemplo@gmail.com"
-		  },
-		  contraseña: {
-			 required: "Por favor ingresa una contraseña",
-			 minlength: "Tu contraseña debe ser de no menos de 6 caracteres de longitud"
-		  },
+		nombre: {
+			required: "Debe ingresar su nombre",
+			minlength: "Debe contener almenos 4 caracteres"
+		 },
+		 telefono: {
+			required: true,
+			number: true,
+			minlength: 6
+		 },
+		 direccion: {
+		   required: true,
+		   minlength: 6
+		},
+		sueldobruto: {
+		   required: true,
+		   number: true,
+		   minlength: 4
+		},
+		prevision: {
+		   required: true,
+		   number: true,
+		   minlength: 4
+		},
+		imposiciones: {
+		   required: true,
+		   number: true,
+		   minlength: 4
+		},
+		bonotransporte: {
+		   required: true,
+		   number: true,
+		   minlength: 4
+		},
+		bonoadc: {
+		   required: true,
+		   number: true,
+		   minlength: 4
+		},
 	   },
 	});
  });
