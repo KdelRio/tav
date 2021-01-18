@@ -5,25 +5,36 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Page Title</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel='stylesheet' type='text/css' media='screen' href='./css/Mantenedor.css'>
+    <link rel="stylesheet" href="./css/Mantenedor.css">
     <script src='main.js'></script>
 </head>
 <body>
-    <div class="window-notice" id="window-notice">
-        <div class="content">
-            <header><h2>Panel de Modificaciones</h2></header>
-            <div class="content-text">
-                <p>Nombre <input type="text"></p>
-                <p>Telefono <input type="text"></p>
-                <p>Direccion <input type="text"></p>
-                <p>Sueldo bruto <input type="text"></p>
-                <p>Prevision <input type="text"></p>
-                <p>Imposiciones <input type="text"></p>
-                <p>Bono transporte <input type="text"></p>
-                <p>Bonos adicionales <input type="text"></p>
-            <div class="content-buttons"><a href="./Mantenedor.html" id="close-button">Modificar</a></div>
-        </div>
+    <body style="background-image: url(./img/fondo-login.jpg);background-size: 100%;">
+        <div id="wrapper">
+          <div id="first">
+             <div class="vertical-menu">
+               <a href="./cuenta.html">Perfil</a>
+               <a href="./Mantenedor.html" class="active">Administrar Empleados</a>
+               <a href="./Login.html">Cerrar Sesion</a>
+             </div>
+          </div>
+             <div id="second">
+                <div class="content">
+                    <header><h2>Panel de Modificaciones</h2></header>
+                    <div class="content-text">
+                        <p>Nombre <input type="text" required></p>
+                        <p>Telefono <input type="text" required></p>
+                        <p>Direccion <input type="text" required></p>
+                        <p>Sueldo bruto <input type="text"required></p>
+                        <p>Prevision <input type="text" required></p>
+                        <p>Imposiciones <input type="text" required></p>
+                        <p>Bono transporte <input type="text" required></p>
+                        <p>Bonos adicionales <input type="text" required></p>
+                    <div class="botones"><a href="./Mantenedor.html" id="close-button">Modificar</a></div>
+                </div>
+         </div>   
+       
     </div>
 </body>
 </html>
