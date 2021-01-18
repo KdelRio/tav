@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./css/Mantenedor.css'>
+    <link rel="stylesheet" href="./css/Mantenedor.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src='./js/mantenedor.js'></script>
+</head>
+<body style="background-image: url(./img/fondo-login.jpg);background-size: 100%;">
+ <div id="wrapper">
+   <div id="first">
+      <div class="vertical-menu">
+        <a href="./cuenta.html">Perfil</a>
+        <a href="./Mantenedor.html" class="active">Administrar Empleados</a>
+        <a href="./Login.html">Cerrar Sesion</a>
+      </div>
+   </div>
+      <div id="second">
+        <div style="margin: 12px;">
+            <select name="select" class="filtro">
+              <option selected value="value1">Nombre</option>
+              <option value="value2">Telefono</option>
+              <option value="value3">Direccion</option> 
+            </select> 
+            <input type="text" id="text1" class="filtro" placeholder="Ingrese aqui">
+            <button class="botones">Filtrar</button>
+      </div>
+      <table>
+      <tr>
+          <th>Nombre</th>
+          <th>Telefono</th>
+          <th>Direccion</th>
+          <th>Sueldo bruto</th>
+          <th>Prevision</th>
+          <th>Imposiciones</th>
+          <th>Bono transporte</th>
+          <th>Bonos adicionales</th>
+          <th colspan="2">Accion</th>
+        </tr>
+        <tr>
+          <td class="nombre">Kevin del rio</td>
+          <td>988987646</td>
+          <td>Chile,Santiago,Quilicura</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td><a href="./popupe.html">Eliminar</a></td>
+          <td><a href="./popupm.html">Modificar</a></td>
+        </tr>
+        <tr>
+          <td>Diego Chacana</td>
+          <td>949484814</td>
+          <td>Chile,Santiago,Quilicura</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td><a href="./popupe.html">Eliminar</a></td>
+          <td><a href="./popupm.html">Modificar</a></td>
+        </tr>
+        <tr>
+          <td>Ricardo Salas</td>
+          <td>985475462</td>
+          <td>Chile,Santiago,Desconocido</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td><a href="./popupe.html">Eliminar</a></td>
+          <td><a href="./popupm.html">Modificar</a></td>
+        </tr>
+        <tr>
+          <td>Patricio Ogaz</td>
+          <td>985674521</td>
+          <td>Chile,Santiago,Desconocido</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td><a href="./popupe.html">Eliminar</a></td>
+          <td><a href="./popupm.html">Modificar</a></td>
+        </tr>
+    </table>
+  </div>  
+      <script>
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "250px";
+        }
+        
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+        }
+        </script>
+
+  
+</body>
+</html>
