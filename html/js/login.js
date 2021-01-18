@@ -1,9 +1,11 @@
 $.validator.setDefaults( {
     submitHandler: function () {
-       alert( "submitted!" );
+		alert( "Datos Correctos, Ingresando!" );
+		('#ingresar').attr('href','./cuenta.html');
+	  }
     }
- });
- 
+ );
+
  $(document).ready(function(){
 	 $('#loginform').validate({
 		rules: {
@@ -13,8 +15,7 @@ $.validator.setDefaults( {
 		   },
 		   contraseña: {
 			  required: true,
-			  minlength: 6,
-			  password: true
+			  minlength: 6
 		   },
 		   agree: "required"
 		},
@@ -23,7 +24,6 @@ $.validator.setDefaults( {
 			  required: "Por favor ingresa un correo valido",
 			  email: "Debe contener @; ejemplo@gmail.com"
 		   },
-		   comments: "Por favor ingresa un comentario",
 		   contraseña: {
 			  required: "Por favor ingresa una contraseña",
 			  minlength: "Tu contraseña debe ser de no menos de 6 caracteres de longitud"

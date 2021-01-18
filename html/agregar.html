@@ -5,80 +5,109 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Page Title</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    <link rel="stylesheet" href="./css/style.css">
-    <script src="https://cdn.jsdelivr.net/npm/ jquery-validation@1.19.3 /dist/jquery.validate.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/ jquery-validation@1.19.3 /dist/jquery.validate.min.js"></script>
-    <script src='main.js'></script>
+    <link rel='stylesheet' type='text/css' media='screen' href='./css/Mantenedor.css'>
+    <link rel="stylesheet" href="./css/Mantenedor.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.0/dist/jquery.validate.js"></script>
 </head>
-<body>
-      <ul>
-        <li><a href="tablasempleados.html">Tabla de Empleados</a></li>
-        <li><a class="active" href="./agregar.html">Agregar</a></li>
-        <li><a href="cuenta.html">Datos de la cuenta</a></li>
-        <li><a href="./index.html">Cerrar Sesion</a></li>
-
-      </ul>
-      <div style="margin-left:15%;padding:1px 16px;height:100%;">
-        <h1>Agregar Empleados</h1>
-        <div id="wrapper">
-            <div id="first">
-                <section style="margin-left: 30px;">
-                    <h1 style="margin-left: 10px;">Datos Personales</h1>
-                    <article>
-                        <p class="centrado">Nombre</p>
-                        <input class="tcentrado" type="text" id="nombre">
-                    </article>
-                    <article>
-                        <p class="centrado">Telefono</p>
-                        <input class="tcentrado" type="text" id="telefono" >
-                    </article><br>
-                </section>
-            </div>
-            <div>
-                <section style="margin-left: 30px;margin-top: 66px;">
-                    <article>
-                        <p class="centrado">Direccion</p>
-                        <input class="tcentrado" type="text" id="nombre">
-                    </article><br>
-                </section>
-            </div>
-        </div>
-        <div id="wrapper">
-            <div id="second">
-                <section style="margin-left: 30px;">
-                    <h1 style="margin-left: 10px;">Remuneracion</h1>
-                    <article>
-                        <p class="centrado">Sueldo bruto</p>
-                        <input class="tcentrado" type="text" id="usuario">
-                    </article>
-                    <article>
-                        <p class="centrado">Prevision</p>
-                        <input class="tcentrado" type="text" id="contraseña">
-                    </article>
-                </section>
-            </div>
-            <div>
-                <section style="margin-left: 30px;margin-top: 66px;">
-                    <article>
-                        <p class="centrado">Imposiciones</p>
-                        <input class="tcentrado" type="text" id="nombre">
-                    </article>
-                    <article>
-                        <p class="centrado">Bono transporte</p>
-                        <input class="tcentrado" type="text" id="nombre">
-                    </article>
-                </section>
-            </div>
-            <div>
-                <section style="margin-left: 30px;margin-top: 135px;">
-                    <article>
-                        <p class="centrado">Bonos adicionales</p>
-                        <input class="tcentrado" type="text" id="nombre">
-                    </article>
-                </section>
-            </div>
-        </div>
-        <button style="margin-top: 40px;margin-left: 400px;"><a href="./popupa.html">Agregar</a></button>
+<body style="background-image: url(./img/fondo-login.jpg);background-size: 100%;">
+ <div id="wrapper">
+   <div id="first">
+      <div class="vertical-menu">
+        <a href="./cuenta.html">Perfil</a>
+        <a href="./Mantenedor.html" class="active">Administrar Empleados</a>
+        <a href="./Login.html">Cerrar Sesion</a>
+      </div>
+   </div>
+      <div id="second">
+        <div style="margin: 12px;">
+            <select name="select" class="filtro">
+              <option selected value="value1">Nombre</option>
+              <option value="value2">Telefono</option>
+              <option value="value3">Direccion</option> 
+            </select> 
+            <input type="text" id="text1" class="filtro" placeholder="Ingrese aqui">
+            <button class="botones">Filtrar</button>
+      </div>
+      <table>
+      <tr>
+          <th>Nombre</th>
+          <th>Telefono</th>
+          <th>Direccion</th>
+          <th>Sueldo bruto</th>
+          <th>Prevision</th>
+          <th>Imposiciones</th>
+          <th>Bono transporte</th>
+          <th>Bonos adicionales</th>
+          <th colspan="2">Accion</th>
+        </tr>
+        <tr>
+          <td class="nombre">Kevin del rio</td>
+          <td>988987646</td>
+          <td>Chile,Santiago,Quilicura</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td><a href="./popupe.html">Eliminar</a></td>
+          <td><a href="./popupm.html">Modificar</a></td>
+        </tr>
+        <tr>
+          <td>Diego Chacana</td>
+          <td>949484814</td>
+          <td>Chile,Santiago,Quilicura</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td><a href="./popupe.html">Eliminar</a></td>
+          <td><a href="./popupm.html">Modificar</a></td>
+        </tr>
+        <tr>
+          <td>Ricardo Salas</td>
+          <td>985475462</td>
+          <td>Chile,Santiago,Desconocido</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td><a href="./popupe.html">Eliminar</a></td>
+          <td><a href="./popupm.html">Modificar</a></td>
+        </tr>
+        <tr>
+          <td>Patricio Ogaz</td>
+          <td>985674521</td>
+          <td>Chile,Santiago,Desconocido</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td><a href="./popupe.html">Eliminar</a></td>
+          <td><a href="./popupm.html">Modificar</a></td>
+        </tr>
+    <form class="form-group" id="addform" method="get" action="./Mantenedor.html">
+        <tr>
+            <td><input class="filtro2" name="nombre" id="nombre" required></td>
+            <td><input class="filtro2" name="telefono" id="telefono"></td>
+            <td><input class="filtro2" name="direccion" id="direccion"></td>
+            <td><input class="filtro2" name="sueldobruto" id="sueldobruto"></td>
+            <td><input class="filtro2" name="prevision" id="prevision"></td>
+            <td><input class="filtro2" name="imposiciones" id="imposiciones"></td>
+            <td><input class="filtro2" name="bonotransporte" id="bonotransporte"></td>
+            <td><input class="filtro2" name="bonosadc" id="bonosadc"></td>
+            <td><input class="botonadd" id="ingresar" type="submit" value="Confirmar"></td>
+            <td></td>
+        </tr>
+    </form>
+    </table>
+    <br><br>
+    <a class="botones" href="./agregar.html">Agregar</a>
+  </div>
+  <script src='./js/agregar.js'></script>   
 </body>
 </html>

@@ -54,6 +54,16 @@ th{
     background-color: transparent;
 }
 
+.filtro2{
+    border: none;
+    border-bottom: 1px solid  rgba(255, 255, 255, 0.349);
+    width: 100%;
+    text-align: left;
+    padding: 8px;
+    color: white;
+    background-color: transparent;
+}
+
 option{
     background-color: #2695a9;
 }
@@ -69,6 +79,18 @@ option{
         color: white;
         font-family: 'calibri';
         font-size: 18px;
+        text-decoration: none;
+}
+
+.botonadd{
+    border: none;
+    width: 100%;
+    text-align: center;
+    padding: 8px;
+    font-size: 18px;
+    color: white;
+    background-color: transparent;
+    font-family: 'calibri';
 }
 
 .botones a{
