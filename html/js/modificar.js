@@ -1,6 +1,6 @@
 $.validator.setDefaults( {
     submitHandler: function () {
-		alert( "Usuario Agregado Exitosamente!" );
+		alert( "Usuario Modificado Exitosamente!" );
 		('#ingresar').attr('href','./agregar2.html');
 	  }
     }

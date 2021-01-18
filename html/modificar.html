@@ -7,8 +7,9 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='./css/Mantenedor.css'>
     <link rel="stylesheet" href="./css/Mantenedor.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src='./js/mantenedor.js'></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.0/dist/jquery.validate.js"></script>
 </head>
 <body style="background-image: url(./img/fondo-login.jpg);background-size: 100%;">
  <div id="wrapper">
@@ -19,6 +20,7 @@
         <a href="./Login.html">Cerrar Sesion</a>
       </div>
    </div>
+   <form id="addform" method="get" action="./agregar2.html">
       <div id="second">
         <div style="margin: 12px;">
             <select name="select" class="filtro">
@@ -42,16 +44,16 @@
           <th colspan="2">Accion</th>
         </tr>
         <tr>
-          <td class="nombre">Kevin del rio</td>
-          <td>988987646</td>
-          <td>Chile,Santiago,Quilicura</td>
-          <td>0</td>
-          <td>0</td>
-          <td>0</td>
-          <td>0</td>
-          <td>0</td>
-          <td><a href="./popupe.html">Eliminar</a></td>
-          <td><a href="./modificar.html">Modificar</a></td>
+            <td><input class="agregar" id="nombre" name="nombre" placeholder="Kevin del rio"></td>
+            <td><input class="agregar" type="number" name="telefono" id="telefono" placeholder="988987646"></td>
+            <td><input class="agregar" name="direccion" id="direccion" placeholder="Chile,Santiago,Quilicura"></td>
+            <td><input class="agregar" type="number" name="sueldobruto" id="sueldobruto" placeholder="0"></td>
+            <td><input class="agregar" type="number" name="prevision" id="prevision" placeholder="0"></td>
+            <td><input class="agregar" type="number" name="imposiciones" id="imposiciones" placeholder="0"></td>
+            <td><input class="agregar" type="number" name="bonotransporte" id="bonotransporte" placeholder="0"></td>
+            <td><input class="agregar" type="number" name="bonoadc" id="bonoadc" placeholder="0"></td>
+            <td><input class="botonadd" id="ingresar" type="submit" value="Confirmar"></td>
+            <td></td>
         </tr>
         <tr>
           <td>Diego Chacana</td>
@@ -63,7 +65,7 @@
           <td>0</td>
           <td>0</td>
           <td><a href="./popupe.html">Eliminar</a></td>
-          <td><a href="./modificar.html">Modificar</a></td>
+          <td><a href="./popupm.html">Modificar</a></td>
         </tr>
         <tr>
           <td>Ricardo Salas</td>
@@ -75,7 +77,7 @@
           <td>0</td>
           <td>0</td>
           <td><a href="./popupe.html">Eliminar</a></td>
-          <td><a href="./modificar.html">Modificar</a></td>
+          <td><a href="./popupm.html">Modificar</a></td>
         </tr>
         <tr>
           <td>Patricio Ogaz</td>
@@ -87,11 +89,13 @@
           <td>0</td>
           <td>0</td>
           <td><a href="./popupe.html">Eliminar</a></td>
-          <td><a href="./modificar.html">Modificar</a></td>
+          <td><a href="./popupm.html">Modificar</a></td>
         </tr>
     </table>
     <br><br>
     <a class="botones" href="./agregar.html">Agregar</a>
-  </div>   
+  </div> 
+</form>  
+<script src='./js/modificar.js'></script>   
 </body>
 </html>
