@@ -20,13 +20,13 @@ $.validator.setDefaults( {
 		},
 		messages: {           
 		 correo: {
-			  required: "Por favor ingresa tu nombre completo",
+			  required: "Por favor ingresa un correo valido",
 			  email: "Debe contener @; ejemplo@gmail.com"
 		   },
 		   comments: "Por favor ingresa un comentario",
 		   contraseña: {
 			  required: "Por favor ingresa una contraseña",
-			  minlength: "Tu contraseña debe ser de no menos de 5 caracteres de longitud"
+			  minlength: "Tu contraseña debe ser de no menos de 6 caracteres de longitud"
 		   },
 		},
 	 });
