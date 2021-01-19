@@ -20,6 +20,7 @@
         <a href="./Login.html">Cerrar Sesion</a>
       </div>
    </div>
+   <form id="addform" method="get" action="./agregar2.html">
       <div id="second">
         <div style="margin: 12px;">
             <select name="select" class="filtro">
@@ -42,9 +43,23 @@
           <th>Bonos adicionales</th>
           <th colspan="2">Accion</th>
         </tr>
+        <tr>
+            <td><input class="agregar" id="nombre" name="nombre"></td>
+            <td><input class="agregar" type="number" name="telefono" id="telefono"></td>
+            <td><input class="agregar" name="direccion" id="direccion"></td>
+            <td><input class="agregar" type="number" name="sueldobruto" id="sueldobruto"></td>
+            <td><input class="agregar" type="number" name="prevision" id="prevision"></td>
+            <td><input class="agregar" type="number" name="imposiciones" id="imposiciones"></td>
+            <td><input class="agregar" type="number" name="bonotransporte" id="bonotransporte"></td>
+            <td><input class="agregar" type="number" name="bonoadc" id="bonoadc"></td>
+            <td><input class="botonadd" id="ingresar" type="submit" value="Confirmar"></td>
+            <td></td>
+        </tr>
+    </form>
     </table>
     <br><br>
-    <a class="botones" href="./agregarvacio.html">Agregar</a>
-  </div>   
+    <a class="botones" href="./agregar.html">Agregar</a>
+  </div>
+  <script src='./js/agregar.js'></script>   
 </body>
 </html>

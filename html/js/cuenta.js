@@ -1,13 +1,14 @@
 $.validator.setDefaults( {
     submitHandler: function () {
-       alert( "submitted!" );
+	   alert( "Perfil Modificado con exito!" );
+	   ('#Modificar').attr('href','./cuenta.html');
     }
  });
  
  $(document).ready(function(){
 	 $('#cuentaform').validate({
 		rules: {
-		   usuario: {
+		   nombreC: {
 			  required: true,
 
            },
@@ -23,8 +24,8 @@ $.validator.setDefaults( {
 		   agree: "required"
 		},
 		messages: {           
-		   usuario: {
-			  required: "Por favor ingrese su usuario"
+		   nombreC: {
+			  required: "Por favor ingrese su nombre completo"
 		   },
 		   contraseñaC: {
 			  required: "Por favor ingresa una contraseña",
