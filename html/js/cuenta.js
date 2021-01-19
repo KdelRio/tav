@@ -19,7 +19,6 @@ $.validator.setDefaults( {
 		   contraseñaC: {
 			  required: true,
 			  minlength: 6,
-			  password: true,
 		   },
 		   agree: "required"
 		},
