@@ -3,37 +3,34 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Login</title>
+    <title>Registro</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='./css/formulario-login.css'>
-    <link rel="stylesheet" href="./css/formulario-login.css">
-    <script src='main.js'></script>
+    <link rel="stylesheet" href="./css/formulario-login |.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.0/dist/jquery.validate.js"></script>
 </head>
 <body style="background-image: url(./img/fondo-login.jpg);background-size: 100%;" >
     <section class="formulario-login">
-        <form class="cmxform" id="commentForm" method="get" action="./Login.html">
-                <h4>Registro de Usuario</h4>
-                <label for="nombres">Nombre</label>
-                <input class="controles" type="text" name="nombres" id="nombres" minlength="2" placeholder="Ingrese su Nombre" required>
-                <label for="apellidos">Apellidos</label>
-                <input class="controles" type="text" name="apellidos" id="apellidos" minlength="2" placeholder="Ingrese sus Apellidos" required>
-                <label for="correo">Correo</label>
-                <input class="controles" type="email" name="correo" id="correo" minlength="2" placeholder="Ingrese su Correo" required>
-                <label for="contraseña">Contraseña</label>
-                <input class="controles" type="password" name="contraseña" id="contraseña" minlength="6" placeholder="Ingrese su Contraseña" required>
-                <input type="checkbox" name="tyc" id="tyc" required><label for="tyc"> Acepto los <a href="">Terminos y condiciones</a></label>
-                <input class="botones" type="submit" value="Registrarse">
+        <form class="form-group" id="regform" method="get" action="./Login.html">
+                <h4>REGISTRO</h4>
+                <label for="usuarioreg">Defininir nombre de usuario</label>
+                <input class="controles" id="usuarioreg" name="usuarioreg" placeholder="Ingrese su usuario">
+                <br>
+                <label for="correoreg">Definir correo</label>
+                <input class="controles" id="correoreg" name="correoreg" placeholder="Ingrese su correo">
+                <br>
+                <label for="contraseñareg">Ingrese una Contraseña</label>
+                <input class="controles" type="password" name="contraseñareg" id="contraseñareg" minlength="6" placeholder="Ingrese su Contraseña ">
+                <br>
+                <label for="telefonoreg">Ingresar Telefono </label>
+                <input class="controles" id="telefonoreg" name="telefonoreg" minlength="8" placeholder="Ingrese su telefono">
+                <input class="botones" type="submit" value="Crear usuario">
+                <button class="botones"><a href="./Login.html">Regresar</a></button>
         </form>
     </section>
-
-    <script>
-		var require = {
-			paths: {
-				"jquery": "../../lib/jquery-3.1.1"
-			}
-		};
-		</script>
-		<script src="../../lib/require.js" data-main="app.js"></script>
+    <script src='./js/registro.js'></script>
 </body>
 
 </html>

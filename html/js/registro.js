@@ -5,18 +5,23 @@ $.validator.setDefaults( {
  });
  
  $(document).ready(function(){
-	 $('#cuentaform').validate({
+	 $('#regform').validate({
 		rules: {
-		   usuario: {
+		   usuarioreg: {
 			  required: true,
 
            },
-           telefono: {
+           telefonoreg: {
               required:true,
-              minlength: 8,
+              minlength: 8
                             
            },
-		   contraseñaC: {
+           correoreg: {
+              required: true,
+              email: true
+           },
+           
+		   contraseñareg: {
 			  required: true,
 			  minlength: 6,
 			  password: true,
@@ -24,17 +29,21 @@ $.validator.setDefaults( {
 		   agree: "required"
 		},
 		messages: {           
-		   usuario: {
-			  required: "Por favor ingrese su usuario"
+		   usuarioreg: {
+			  required: "Por favor ingrese un usuario"
 		   },
-		   contraseñaC: {
+		   contraseñareg: {
 			  required: "Por favor ingresa una contraseña",
 			  minlength: "Tu contraseña debe ser de no menos de 5 caracteres de longitud"
            },
-           telefono: {
+           telefonoreg: {
                required: "debe ingresar su telefono",
                minlength: "debe tener minimo 8 numeros"
 
+           },
+           correoreg: {
+               required: "debe ingresar un correo",
+               email: "debe contener un @"
            },
 		},
 	 });

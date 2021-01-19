@@ -20,7 +20,7 @@ $.validator.setDefaults( {
 		},
 		messages: {           
 		 correo: {
-			  required: "Por favor ingresa tu nombre completo",
+			  required: "Por favor ingrese su correo",
 			  email: "Debe contener @; ejemplo@gmail.com"
 		   },
 		   comments: "Por favor ingresa un comentario",

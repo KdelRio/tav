@@ -35,6 +35,19 @@
     color: white;
 }
 
+.control {
+    width: 100%;
+    background: #24303c;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: none;
+    border-bottom: 1px solid #1f53c5;
+    font-family: 'calibri';
+    font-size: 18px;
+    color: white;
+}
+
 .formulario-login p {
     height: 40px;
     text-align: center;
