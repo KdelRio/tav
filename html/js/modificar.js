@@ -11,7 +11,7 @@ $.validator.setDefaults( {
 	   rules: {
 		  nombre: {
 			 required: true,
-			 minlength: 4,
+			 minlength: 4
 		  },
 		  telefono: {
 			 required: true,
