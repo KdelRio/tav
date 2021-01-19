@@ -3,34 +3,31 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Datos de cuenta</title>
+    <title>Datos de la Cuenta</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='./css/formulario-login.css'>
-    <link rel="stylesheet" href="./css/formulario-login.css">
-    <script src='main.js'></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.js"></script>
+    <link rel="stylesheet" href="./css/formulario-login |.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.0/dist/jquery.validate.js"></script>
 </head>
 <body style="background-image: url(./img/fondo-login.jpg);background-size: 100%;" >
     <section class="formulario-login">
-        <form class="cmxform" id="fdatos" method="get" action="#">
-                <h4>Modificar Datos</h4>
-                <label for="nombreu">Nombre de usuario</label>
-                <input class="controles" type="text" name="nombreu" id="nombreu" minlength="2" placeholder="Ingrese su Nombre" required>
-                <label for="correo">Correo</label>
-                <input class="controles" type="email" name="correo" id="correo" minlength="2" placeholder="Ingrese su Correo" required>
-                <label for="telefono">Telefono</label>
-                <input class="controles" type="number" name="telefono" id="telefono" minlength="7" placeholder="Ingrese su telefono/Celular" required>
-                <label for="contraseña">Contraseña</label>
-                <input class="controles" type="password" name="contraseña" id="contraseña" minlength="6" placeholder="Ingrese su Contraseña" required>
-                <input type="checkbox" name="tyc" id="tyc" required><label for="tyc"> Acepto cambiar datos (no se podran cambiar nuevamente en 3 dias) </label>
-                <input class="botones" type="submit" value="Actualizar datos">
+        <form class="form-group" id="cuentaform" method="get" action="./cuenta.html">
+                <h4>Modificar datos</h4>
+                <label for="usuario">Usuario nuevo</label>
+                <input class="controles" id="usuario" name="usuario" placeholder="Ingrese nuevo usuario">
+                <br>
+                <label for="contraseñaC">Contraseña nueva</label>
+                <input class="controles" type="password" name="contraseñaC" id="contraseñaC" minlength="6" placeholder="Ingrese su Contraseña nueva">
+                <br>
+                <label for="telefono">Telefono nuevo</label>
+                <input class="controles" id="telefono" name="telefono" minlength="8" placeholder="Ingrese nuevo telefono">
+                <input class="botones" type="submit" value="Modificar">
                 <button class="botones"><a href="./cuenta.html">Regresar</a></button>
         </form>
-        
     </section>
-
-    
+    <script src='./js/cuenta.js'></script>
 </body>
 
 </html>
